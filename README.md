@@ -24,6 +24,12 @@ pip install -r requirements.txt
 cd src
 ```
 
+## Programs in CoRE Language
+
+OpenAGI: in `src/info/OpenAGI/OpenAGI_Flow.txt`
+
+TravelPlanner: in `sec/info/TravelPlanner/TravelPlanner_Flow.txt`
+
 ## Running Command Examples
 
 OpenAGI on gpt-4-1106-preview:
