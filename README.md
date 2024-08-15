@@ -1,6 +1,6 @@
-# LLM as Interpreter for Natural Language Programming, Pseudo-code Programming and Flow Programming of AI Agents
+# CoRE: LLM as Interpreter for Natural Language Programming of Agents
 
-Since their inception, programming languages have trended towards greater readability and lower barriers for programmers. Following this trend, natural language can be a promising type of programming language that provides great flexibility and usability and helps towards the democracy of programming. However, the inherent vagueness, ambiguity, and verbosity of natural language pose significant challenges in developing an interpreter that can accurately understand the programming logic and execute instructions written in natural language. Fortunately, recent advancements in Large Language Models (LLMs) have demonstrated remarkable proficiency in interpreting complex natural language. Inspired by this, we develop a novel system for Code Representation and Execution (CoRE), which employs LLM as interpreter to interpret and execute natural language instructions. The proposed system unifies natural language programming, pseudo-code programming, and flow programming under the same representation for constructing language agents, while LLM serves as the interpreter to interpret and execute the agent programs. In this paper, we begin with defining the programming syntax that structures natural language instructions logically. During the execution, we incorporate external memory to minimize redundancy. Furthermore, we equip the designed interpreter with the capability to invoke external tools, compensating for the limitations of LLM in specialized domains or when accessing real-time information.
+The rapid advancements in generative AI technologies, particularly in Large Language Models (LLMs), have paved the way for AI agents to tackle increasingly complex tasks. However, despite these innovations, current LLM agents often rely solely on their inherent knowledge and reasoning abilities, underutilizing valuable human expertise and detailed guidance. This limitation can result in suboptimal solutions, particularly in scenarios requiring nuanced understanding or specialized input. One promising approach to addressing this issue is through natural language programming, which allows human instructions to be effectively represented. In this paper, we introduce a novel system, Code Representation and Execution (CoRE), which leverages LLMs as interpreters to execute natural language programs. CoRE addresses key challenges in natural language programming by introducing structured syntax for logic representation, mechanisms for precise step-by-step execution, and components for information retrieval and tool usage. To overcome the limitations of LLMs, such as token constraints and domain-specific knowledge gaps, CoRE employs temporary memory for intermediate results and integrates external tools for enhanced problem-solving. Furthermore, CoRE ensures accurate task progression by requiring LLMs to evaluate current outputs before determining subsequent steps. This collaborative approach, combining human instructions with advanced AI, enhances the effectiveness and contextual accuracy of AI-driven problem-solving.
 
 ## Preparation
 
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 cd src
 ```
 
-## Programs in CoRE Language
+## Programs in CoRE System
 
 OpenAGI: in `src/info/OpenAGI/OpenAGI_Flow.txt`
 
